@@ -1,0 +1,160 @@
+html, body { 
+  margin: 0; 
+  padding: 0; 
+  width: 100%; 
+  height: 100vh;
+  overflow: hidden;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+/* Bootstrap Overrides */
+.h-30 {
+  height: 30%!important;
+} 
+
+.w-30 {
+  width: 30%!important;
+} 
+
+/* REST */
+.ui-toolip {
+  width: auto;
+  height: auto;
+}
+
+#interfaces,
+.interface-controls {
+  position: absolute;
+}
+
+#interfaces {
+  z-index: 0;
+}
+
+.interface-controls {
+  top: 20px;
+  left: 50px;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+#camera-controls {
+  float: left;
+  /* 	right: 50%; */
+  /* 	bottom: 50px; */
+}
+
+#floorplanner,
+#viewer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+#walltextures {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+.btn-file {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  cursor: inherit;
+  display: block;
+}
+
+.btn {
+  border-radius: 0.15rem;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.card {
+  max-height: 400px;
+}
+
+.card-body {  
+  overflow-y: auto;
+}
+
+.main-card {
+  max-height: 100%;
+}
+
+/* Custom Inteface */
+/** Top **/
+.nav-sidebar {
+  margin-top: 15px;
+}
+
+.nav-sidebar a span {
+  line-height: 1.5;
+  font-size: 1.5em;
+  color: #343a40;
+  text-align: center;
+}
+
+.nav-sidebar .btn {
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+}
+
+.others-btn {
+  text-align: center;
+  font-size: xx-small;
+}
+
+.others-btn .fas { 
+  font-size: large;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/** Element Info Sidebar **/
+#element-sidebar {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;  
+}
+
+/** Bottom **/
+#interface-controls {
+  display: inline-flex;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.interface-floorplan-type {
+  width: 150px;
+}
+
+.midddle-buttons {
+  margin: 0 auto;
+}
+
+.inventory-content {
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
